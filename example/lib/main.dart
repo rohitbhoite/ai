@@ -31,6 +31,7 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
+    resizeToAvoidBottomInset: true,
     appBar: AppBar(title: const Text(App.title)),
     body: LlmChatView(
       provider: FirebaseProvider(
